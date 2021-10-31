@@ -86,6 +86,7 @@ if [%1]==[] goto main
 if not "%ParamSpaceName%"=="" (
 	Set SpaceName="%ParamSpaceName%"
 ) else (
+	::Defina Aqui Seu Space Name DEFAULT
 	Set SpaceName=CDDNE-Devel
 )
 

@@ -2,7 +2,7 @@
 
 ![SaaS Export Apps](https://www.infrascale.com/wp-content/uploads/blog-img-SaaS-1200x628-1.jpg "SaaS Export Apps")
 
-Desenvolver aplicativos no ambiente `Qlik Sense SaaS`  pode exigir fazer uma copia completa dos aplicativos de um determinado `Space` de desenvovimento, seja para fazer um backup ou até mesmo um controle de versionamento :octocat: . 
+Desenvolver aplicativos no ambiente `Qlik Sense SaaS`  pode exigir fazer uma copia local completa dos aplicativos de um determinado `Space` de desenvovimento, seja para fazer um backup ou até mesmo um controle de versionamento :octocat: . 
 
 **QlikSaaSExportSpaceApps**, é um script para Windows desenvolvido para simplificar a exportação de todos os aplicativos de um determinado **Space** do QLik Sense SaaS. 
 
@@ -35,12 +35,26 @@ Space Name - Nome do Space onde residem os apps para exportação. Não informad
 --help - Tela de ajuda
 </pre>
 
+###Diagrama de Sequência
+                    
+```seq
+Note right of OnPremise: QlikSaaSExportSpaceApps.bat 
+OnPremise->Qlik SaaS: Required Space Exist?
+Qlik SaaS-->OnPremise: Yes or No 
+OnPremise->>Qlik SaaS: If Space Exist, give me apps list
+Qlik SaaS-->OnPremise: Apps List With ID
+OnPremise->>Qlik SaaS: Request Apps Export
+Qlik SaaS-->OnPremise: Apps Exported
+Note Right of OnPremise: APP 
+Note Right of OnPremise: APP
+```
+
 **License**
 QlikSaaSExportSpaceApps segue a [Licença MIT](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/master/LICENSE "Licença MIT"), qualquer pessoa pode usar livremente.
 
 ## English README
 
-Developing apps in the Qlik Sense SaaS environment may require making a full copy of the apps from a given Development Space, either for backup or even version control. :octocat:
+Developing apps in the Qlik Sense SaaS environment may require making a full local copy of the apps from a given Development Space, either for backup or even version control. :octocat:
 
 **QlikSaaSExportSpaceApps**, is a script for Windows designed to simplify the export of all apps from a given Space from QLik Sense SaaS. 
 
@@ -74,6 +88,21 @@ Space Name - Name of the Space where the apps for export reside. Not informed wi
 --nodata - Perform app export without data
 --help - Help screen
 </pre>
+
+###Sequence Diagram
+                    
+```seq
+Note right of OnPremise: QlikSaaSExportSpaceApps.bat 
+OnPremise->Qlik SaaS: Required Space  Exist?
+Qlik SaaS-->OnPremise: Yes or No 
+OnPremise->>Qlik SaaS: If Space Exist, give me apps list
+Qlik SaaS-->OnPremise: Apps List With ID
+OnPremise->>Qlik SaaS: Request Apps Export
+Qlik SaaS-->OnPremise: Apps Exported
+Note Right of OnPremise: APP 
+Note Right of OnPremise: APP
+```
+
 
 **License**
 QlikSaaSExportSpaceApps follows the [MIT License](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/master/LICENSE "MIT License"), anyone can use it freely.

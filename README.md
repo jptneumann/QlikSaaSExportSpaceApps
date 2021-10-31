@@ -2,7 +2,7 @@
 
 ![SaaS Export Apps](https://www.infrascale.com/wp-content/uploads/blog-img-SaaS-1200x628-1.jpg "SaaS Export Apps")
 
-Desenvolver aplicativos no ambiente `Qlik Sense SaaS`  pode exigir fazer uma copia local completa dos aplicativos de um determinado `Space` de desenvovimento, seja para fazer um backup ou até mesmo um controle de versionamento :octocat: . 
+Desenvolver aplicativos no ambiente `Qlik Sense SaaS`  pode exigir fazer uma cópia local completa dos aplicativos de um determinado `Space` de desenvolvimento, seja para fazer um backup ou até mesmo um controle de versionamento :octocat: . 
 
 **QlikSaaSExportSpaceApps**, é um script para Windows desenvolvido para simplificar a exportação de todos os aplicativos de um determinado **Space** do QLik Sense SaaS. 
 
@@ -25,7 +25,7 @@ o **jq** é um processador JSON leve e flexível. O jq é escrito em C portátil
 ### Instalação
 Para instalar, basta seguir os requisitos acima, e instalar or arquivo **QlikSaaSExportSpaceApps.bat** em um local de sua preferência e executar.
 
-#### Sintax
+#### Sintaxe
 `QlikSaaSExportSpaceApps.bat [SpaceName] [--nodata] [--help]`
 
 **Parâmetros:**
@@ -37,7 +37,7 @@ Space Name - Nome do Space onde residem os apps para exportação. Não informad
 
 ###Diagrama de Sequência
                     
-![QlikSaaSExportSpaceApps Diagram](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/master/QlikSaaSExportSpaceAppsDiag.jpg "QlikSaaSExportSpaceApps Diagram")
+![QlikSaaSExportSpaceApps Diagram](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/main/QlikSaaSExportSpaceAppsDiag.jpg?raw=true "QlikSaaSExportSpaceApps Diagram")
 
 **License**
 QlikSaaSExportSpaceApps segue a [Licença MIT](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/master/LICENSE "Licença MIT"), qualquer pessoa pode usar livremente.

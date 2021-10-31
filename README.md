@@ -16,16 +16,16 @@ Para maiores informações, consulte:
 
 ### Requisitos
 
-##### qlik-cli
+#### qlik-cli
 Ter instalado o **qlik-cli** e o [contexto](https://qlik.dev/libraries-and-tools/qlik-cli#get-started "contexto") configurado por intermédio de uma *API-key*. Para download e maiores informações: [qlik-cli](https://github.com/qlik-oss/qlik-cli/releases "qlik-cli").
 
-##### jq
+#### jq
 o **jq** é um processador JSON leve e flexível. O jq é escrito em C portátil, e tem zero dependências de tempo de execução. Você pode baixar um único binário. Para download e maiores informações: [jq](https://stedolan.github.io/jq/download/ "jq")
 
-##### Instalação
+### Instalação
 Para instalar, basta seguir os requisitos acima, e instalar or arquivo **QlikSaaSExportSpaceApps.bat** em um local de sua preferência e executar.
 
-##### Sintax
+#### Sintax
 `QlikSaaSExportSpaceApps.bat [SpaceName] [--nodata] [--help]`
 
 **Parâmetros:**

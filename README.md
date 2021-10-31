@@ -37,17 +37,7 @@ Space Name - Nome do Space onde residem os apps para exportação. Não informad
 
 ###Diagrama de Sequência
                     
-```jsseq
-Note right of OnPremise: QlikSaaSExportSpaceApps.bat 
-OnPremise->Qlik SaaS: Required Space Exist?
-Qlik SaaS-->OnPremise: Yes or No 
-OnPremise->>Qlik SaaS: If Space Exist, give me apps list
-Qlik SaaS-->OnPremise: Apps List With ID
-OnPremise->>Qlik SaaS: Request Apps Export
-Qlik SaaS-->OnPremise: Apps Exported
-Note Right of OnPremise: APP 
-Note Right of OnPremise: APP
-```
+![QlikSaaSExportSpaceApps Diagram](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/master/QlikSaaSExportSpaceAppsDiag.jpg "QlikSaaSExportSpaceApps Diagram")
 
 **License**
 QlikSaaSExportSpaceApps segue a [Licença MIT](https://github.com/jptneumann/QlikSaaSExportSpaceApps/blob/master/LICENSE "Licença MIT"), qualquer pessoa pode usar livremente.
@@ -88,20 +78,6 @@ Space Name - Name of the Space where the apps for export reside. Not informed wi
 --nodata - Perform app export without data
 --help - Help screen
 </pre>
-
-###Sequence Diagram
-                    
-```seq
-Note right of OnPremise: QlikSaaSExportSpaceApps.bat 
-OnPremise->Qlik SaaS: Required Space  Exist?
-Qlik SaaS-->OnPremise: Yes or No 
-OnPremise->>Qlik SaaS: If Space Exist, give me apps list
-Qlik SaaS-->OnPremise: Apps List With ID
-OnPremise->>Qlik SaaS: Request Apps Export
-Qlik SaaS-->OnPremise: Apps Exported
-Note Right of OnPremise: APP 
-Note Right of OnPremise: APP
-```
 
 
 **License**

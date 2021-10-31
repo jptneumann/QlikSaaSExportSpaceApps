@@ -37,7 +37,7 @@ Space Name - Nome do Space onde residem os apps para exportação. Não informad
 
 ###Diagrama de Sequência
                     
-```sequence
+```jsseq
 Note right of OnPremise: QlikSaaSExportSpaceApps.bat 
 OnPremise->Qlik SaaS: Required Space Exist?
 Qlik SaaS-->OnPremise: Yes or No 
